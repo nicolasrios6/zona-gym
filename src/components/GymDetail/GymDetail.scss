@@ -1,0 +1,89 @@
+.detail {
+    &__img {
+        background:linear-gradient(#424141be, #424141be), url('../../../public/gimnasio.jpeg'), ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        color: #fff;
+
+        &__title {
+            margin: 0;
+            padding-top: 15px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        &__address {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__swiper {
+        background-color: #162A3D;
+        &__title {
+            font-size: 24px;
+            text-align: start;
+            margin-left: 20px;
+            padding-top: 15px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+    }
+
+    &__activities {
+        padding-inline: 15px;
+        padding-bottom: 40px;
+        background-color: #162A3D;
+        color: #fff;
+        &__title {
+            font-size: 24px;
+            text-align: start;
+            margin-left: 20px;
+            padding-top: 10px;
+            margin-top: 0;
+        }
+
+        &__icons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            row-gap: 15px;
+            justify-items: center;
+
+            &__activity {
+                box-shadow: 1px 1px 3px 1px #f3f1f133;
+                border-radius: 10px;
+                width: 120px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #fff;
+                color: black;
+            }
+        }
+    }
+
+    &__info {
+        text-align: start;
+        padding-inline: 15px;
+        background-color: #162A3D;
+        padding-bottom: 20px;
+        color: #fff;
+
+        &__title {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        &__contact {
+            margin-bottom: 0;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+}
