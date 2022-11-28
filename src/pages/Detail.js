@@ -1,10 +1,10 @@
 import React from 'react';
-import GymDetail from '../components/GymDetail/GymDetail';
+import GymDetailContainer from '../components/GymDetailContainer/GymDetailContainer';
 
 const Detail = () => {
     return (
         <div>
-            <GymDetail />
+            <GymDetailContainer />
         </div>
     );
 }
