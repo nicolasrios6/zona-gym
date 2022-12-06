@@ -1,28 +1,28 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import gimnasios from '../../gymMock';
 import GymDetail from '../GymDetail/GymDetail';
+import { getDoc, doc } from 'firebase/firestore';
+import dataBase from '../../utils/firebaseConfig';
 
 const GymDetailContainer = () => {
 
     const [gym, setGym] = useState({})
     const {id} = useParams()
-    console.log(useParams())
-
-    const getGym = () => {
-        return new Promise((resolve, reject) => {
-            resolve(gimnasios)
-        })
-    }
 
     useEffect(() => {
-        console.log('gimnasio filtrado por id:',gymFilter)
-        setGym(gymFilter)
-    }, []);
+        getGym()
+        .then((gym) => {
+            setGym(gym)
+        })
+    }, [id]);
 
-    const gymFilter = gimnasios.find((gimnasio) => {
-        return gimnasio.id === Number(id)
-    })
+    const getGym = async () => {
+        const docRef = doc(dataBase, 'gimnasios', id)
+        const docSnapshot = await getDoc(docRef)
+        let gym = docSnapshot.data()
+        gym.id = docSnapshot.id
+        return gym
+    }
 
     return (
         <div>

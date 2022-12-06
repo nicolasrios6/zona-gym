@@ -1,6 +1,51 @@
-.slide {
+.mySwiper {
     width: 100%;
-    img {
+
+    .slide {
         width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+
+        img {
+            width: 100%;
+            position: absolute;
+        }
     }
 }
+
+@media (min-width: 500px) {
+    .mySwiper {
+        .slide {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .mySwiper {
+        width: 600px;
+        .slide {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .mySwiper {
+        .slide {
+            height: 400px;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+

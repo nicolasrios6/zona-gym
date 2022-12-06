@@ -1,8 +1,38 @@
 .cardlist {
+    background-color: #162A3D;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    background-color: #162A3D;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
+    
+    &__search {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .cardlist {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .cardlist {
+        padding-bottom: 17px;
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }

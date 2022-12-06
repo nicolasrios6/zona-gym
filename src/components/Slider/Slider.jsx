@@ -6,9 +6,7 @@ import "swiper/css/pagination";
 import "./Slider.scss";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-
-
-const Slider = () => {
+const Slider = ({slide1, slide2, slide3}) => {
     return (
         <>
            <Swiper
@@ -25,9 +23,9 @@ const Slider = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className='mySwiper'
            >
-                <SwiperSlide className='slide'><img src='./gimnasioShopping.jpeg' alt=''/></SwiperSlide>
-                <SwiperSlide className='slide'><img src='./gimnasio.jpeg' alt=''/></SwiperSlide>
-                <SwiperSlide className='slide'><img src='./gimnasio.jpeg' alt=''/></SwiperSlide>
+                <SwiperSlide className='slide'><img src={`../../${slide1}`} alt=''/></SwiperSlide>
+                <SwiperSlide className='slide'><img src={`../../${slide2}`} alt=''/></SwiperSlide>
+                <SwiperSlide className='slide'><img src={`../../${slide3}`} alt=''/></SwiperSlide>
            </Swiper>
         </>
     )
