@@ -79,7 +79,57 @@ const gimnasios = [
             {name: 'Funcional', id: 3},
             {name: 'Pileta', id: 4},
         ]
-    }
+    },
+    {
+        // Info p list
+        name: 'Indalo',
+        img: 'gimnasioIndalo.jpeg',
+        zone: 'Ciudad',
+        id:4,
+        map: 'https://goo.gl/maps/hsXW6Q8Eu4rHjDoQ7',
+        calendar1: 'Lunes, Miercoles y Viernes: 7 a 21hs',
+        calendar2: 'Martes y Jueves: 8 a 21hs',
+        calendar3: 'Sábados: 9 a 13hs',
+        // Info p detail
+        iframe:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.019213450403!2d-68.8626456!3d-32.8914308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3646065d1b4e8d13!2s%C3%8DNDALO%20Actividad%20F%C3%ADsica%20Saludable!5e0!3m2!1ses!2sar!4v1670371559648!5m2!1ses!2sar",
+        address: 'Av Boulogne Sur Mer 788, Mendoza',
+        phone: 2614238217,
+        email: 'jp.garciaechegaray@gmail.com',
+        slide1: 'slideIndalo1.jpeg',
+        slide2 : 'slideIndalo2.jpg',
+        slide3: 'slideIndalo3.jpg',
+        activities: [
+            {name: 'Aeróbico', id: 1},
+            {name: 'Rehabilitación', id: 2},
+            {name: 'Deportivo', id: 3},
+            {name: 'Cycle', id: 4},
+        ]
+    },
+    {
+        // Info p list
+        name: 'Club de Chacras',
+        img: 'gimnasioIndalo.jpeg',
+        zone: 'Ciudad',
+        id:4,
+        map: 'https://goo.gl/maps/hsXW6Q8Eu4rHjDoQ7',
+        calendar1: 'Lunes, Miercoles y Viernes: 7 a 21hs',
+        calendar2: 'Martes y Jueves: 8 a 21hs',
+        calendar3: 'Sábados: 9 a 13hs',
+        // Info p detail
+        iframe:"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13388.272866319785!2d-68.8761794!3d-32.975602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee290af880a06a91!2sClub%20de%20Chacras!5e0!3m2!1ses!2sar!4v1670426423378!5m2!1ses!2sar",
+        address: 'Av Boulogne Sur Mer 788, Mendoza',
+        phone: 2614238217,
+        email: 'jp.garciaechegaray@gmail.com',
+        slide1: 'slideIndalo1.jpeg',
+        slide2 : 'slideIndalo2.jpg',
+        slide3: 'slideIndalo3.jpg',
+        activities: [
+            {name: 'Aeróbico', id: 1},
+            {name: 'Rehabilitación', id: 2},
+            {name: 'Deportivo', id: 3},
+            {name: 'Cycle', id: 4},
+        ]
+    },
 
 ]
 

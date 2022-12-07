@@ -7,6 +7,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import dataBase from '../../utils/firebaseConfig';
 
 const zonas = [
+    {label: 'Ciudad', value: 'ciudad'},
     {label: 'Godoy Cruz', value: 'godoycruz'},
     {label: 'Guaymallén', value: 'guaymallen'},
     {label: 'Luján de Cuyo', value: 'lujandecuyo'},
