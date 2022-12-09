@@ -1,14 +1,13 @@
 import './Card.scss'
 import { Link } from 'react-router-dom';
 
-const Card = ({name, id, img, map, calendar1, calendar2, calendar3, zone}) => {
 
-    // console.log('card id:', {id})
+const Card = ({name, id, img, map, calendar1, calendar2, calendar3, zone}) => {
 
     return (
         <div className='card'>
             <div className='card__img'>
-                <Link to={`/gym/${id}`}><img src={`${img}`} alt=''/></Link>
+                <Link to={`/gym/${id}`} ><img src={`${img}`} alt=''/></Link>
             </div>
             <p className='card__zone'>{`${zone}`}</p>
             <h2 className='card__title'>{`${name}`}</h2>

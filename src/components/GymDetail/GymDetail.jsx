@@ -35,7 +35,6 @@ const GymDetail = ({data}) => {
                             <div key={id}>
                                 <p>{name}</p>
                             </div>
-                            
                         )
                     })}
                 </div>

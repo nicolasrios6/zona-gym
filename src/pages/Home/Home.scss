@@ -1,0 +1,17 @@
+.home {
+    background-color: #162A3D;
+    &__loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
+}
+
+@media (min-width: 1630px) {
+    .home {
+        &__loader {
+            height: 550px;
+        }
+    }
+}
